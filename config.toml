@@ -11,7 +11,7 @@ paginate     = 10
   dateformNumTime = "2006-01-02 15:04"
 
   # Subtitle for home
-  homeSubtitle = "Hi! My name is Rachel and I'm a current graduate student at NYU Tandon."
+  homeSubtitle = "Hi! My name is Rachel and I'm a current MS Cybersecurity student at NYU Tandon."
 
   # Set disableReadOtherPosts to true in order to hide the links to other posts.
   disableReadOtherPosts = false
@@ -70,14 +70,14 @@ paginate     = 10
     url        = "/"
 
   [[menu.main]]
-    identifier = "blog"
-    name       = "Blog"
-    url        = "/posts"
+    identifier = "Notes"
+    name       = "Notes"
+    url        = "/notes"
 
-  [[menu.main]]
-    identifier = "project"
-    name       = "Project"
-    url        = "/projects"
+#  [[menu.main]]
+#    identifier = "project"
+#    name       = "Project"
+#    url        = "/projects"
 
   
 
