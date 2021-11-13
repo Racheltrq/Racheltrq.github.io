@@ -34,4 +34,10 @@ draft: false
 
 `docker inspect name/id of container` inspect the properties of a running container
 
+`docker exec -u 0 -it container_name /bin/bash` get into container as root user
+
+`docker kill $(docker ps -q) && docker rm $(docker ps -a -q)` stop and remove all running containers
+
+`docker rmi $(docker images -q)` remove all images
+
 
