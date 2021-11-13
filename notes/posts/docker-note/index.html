@@ -8,7 +8,7 @@
 <meta name=keywords content>
 <meta name=robots content="noodp">
 <meta name=theme-color content>
-<link rel=canonical href=/notes/posts/test-note/>
+<link rel=canonical href=/notes/posts/docker-note/>
 <title>
 Docker cheatsheet :: About Me — A simple theme for Hugo
 </title>
@@ -17,7 +17,7 @@ Docker cheatsheet :: About Me — A simple theme for Hugo
 <meta itemprop=name content="Docker cheatsheet">
 <meta itemprop=description content="Common commands    Commands Description     docker ps [-a] list (all) containers   docker run start a container   docker stop stop a container   docker rm remove a container   docker rmi remove image   docker images list all images    More on docker run: -d run the container in a detached mode. You will still be able to use the console"><meta itemprop=datePublished content="2021-10-28T14:29:24-04:00">
 <meta itemprop=dateModified content="2021-10-28T14:29:24-04:00">
-<meta itemprop=wordCount content="123"><meta itemprop=image content="/">
+<meta itemprop=wordCount content="162"><meta itemprop=image content="/">
 <meta itemprop=keywords content>
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="/">
@@ -26,7 +26,7 @@ Docker cheatsheet :: About Me — A simple theme for Hugo
 <meta property="og:title" content="Docker cheatsheet">
 <meta property="og:description" content="Common commands    Commands Description     docker ps [-a] list (all) containers   docker run start a container   docker stop stop a container   docker rm remove a container   docker rmi remove image   docker images list all images    More on docker run: -d run the container in a detached mode. You will still be able to use the console">
 <meta property="og:type" content="article">
-<meta property="og:url" content="/notes/posts/test-note/"><meta property="og:image" content="/"><meta property="article:section" content="notes">
+<meta property="og:url" content="/notes/posts/docker-note/"><meta property="og:image" content="/"><meta property="article:section" content="notes">
 <meta property="article:published_time" content="2021-10-28T14:29:24-04:00">
 <meta property="article:modified_time" content="2021-10-28T14:29:24-04:00"><meta property="og:site_name" content="About Me">
 <meta property="article:published_time" content="2021-10-28 14:29:24 -0400 -0400">
@@ -60,7 +60,7 @@ Docker cheatsheet :: About Me — A simple theme for Hugo
 </p>
 </div>
 <article>
-<h2 class=post-title><a href=/notes/posts/test-note/>Docker cheatsheet</a></h2>
+<h2 class=post-title><a href=/notes/posts/docker-note/>Docker cheatsheet</a></h2>
 <div class=post-content>
 <h3 id=common-commands>Common commands</h3>
 <table>
@@ -106,6 +106,9 @@ Docker cheatsheet :: About Me — A simple theme for Hugo
 <p><code>docker attach name/id of container</code> to reattach the container</p>
 <p><code>docker logs name/id of container</code> show logs</p>
 <p><code>docker inspect name/id of container</code> inspect the properties of a running container</p>
+<p><code>docker exec -u 0 -it container_name /bin/bash</code> get into container as root user</p>
+<p><code>docker kill $(docker ps -q) && docker rm $(docker ps -a -q)</code> stop and remove all running containers</p>
+<p><code>docker rmi $(docker images -q)</code> remove all images</p>
 </div>
 </article>
 <hr>
