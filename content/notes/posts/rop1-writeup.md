@@ -1,10 +1,9 @@
 ---
-title: "Rop1_writeup"
+title: "Rop1 Writeup"
 date: 2022-04-10T18:53:03-04:00
 draft: false
 ---
 
-# ROP1
 
 Challenge is from [https://github.com/n132/CTF-Challenges/tree/main/Educational/How2ROP](https://github.com/n132/CTF-Challenges/tree/main/Educational/How2ROP)
 
@@ -33,9 +32,9 @@ context.arch='amd64'
 context.terminal=['tmux','split','-h']
 e=ELF('./pwn')
 p=process('./pwn')
-sla             = lambda a,b: p.sendlineafter(a,b)
-sa                      = lambda a,b: p.sendafter(a,b)
-ra                      = lambda a: p.readuntil(a)
+sla = lambda a,b: p.sendlineafter(a,b)
+sa  = lambda a,b: p.sendafter(a,b)
+ra  = lambda a: p.readuntil(a)
 
 gdb.attach(p, 'b *0x400594')
 #offset = 283552
